@@ -1,41 +1,22 @@
+import React from 'react';
+import { Button} from '~/components/button';
+import { useNavigate, useNavigation } from "@remix-run/react";
 import type { MetaFunction } from "@remix-run/node";
 
 export const meta: MetaFunction = () => {
   return [
-    { title: "New Remix App" },
+    { title: "Fuddy" },
     { name: "description", content: "Welcome to Remix!" },
   ];
-};
-
-export default function Index() {
-  return (
-    <div style={{ fontFamily: "system-ui, sans-serif", lineHeight: "1.8" }}>
-      <h1>Welcome to Fuddy</h1>
-      <ul>
-        <li>
-          <a
-            target="_blank"
-            href="https://remix.run/tutorials/blog"
-            rel="noreferrer"
-          >
-            15m Quickstart Blog Tutorial
-          </a>
-        </li>
-        <li>
-          <a
-            target="_blank"
-            href="https://remix.run/tutorials/jokes"
-            rel="noreferrer"
-          >
-            Deep Dive Jokes App Tutorial
-          </a>
-        </li>
-        <li>
-          <a target="_blank" href="https://remix.run/docs" rel="noreferrer">
-            Remix Docs
-          </a>
-        </li>
-      </ul>
-    </div>
-  );
+}; 
+const Landing = () => {
+    const navigate = useNavigate();
+    return <div>
+    <h1>Welcome to Fuddy!</h1>
+    <Button color="light-purple" size="small" onClick={() =>navigate("/LogIn")}>Log In</Button>
+    <Button color="dark-purple" size="large" onClick={() =>navigate("/SignUp")}>Sign Up</Button>
+    
+  </div>
 }
+
+export default Landing;
