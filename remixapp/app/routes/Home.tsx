@@ -11,7 +11,7 @@ function Home() {
     <div>
       <h1>Welcome to Remix!</h1>
       <p>This is your home page.</p>
-      <Button onClick={() =>navigate("/some/path")}>Sign Up</Button>
+      <Button onClick={() =>navigate("/Profile")}>Sign Up</Button>
     </div>
   );
 }
