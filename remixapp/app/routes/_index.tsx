@@ -11,11 +11,13 @@ export const meta: MetaFunction = () => {
 }; 
 const Landing = () => {
     const navigate = useNavigate();
-    return <div>
-    <h1>Welcome to Fuddy!</h1>
+    return <div className="home-background">
+      <div className="center-container">
+    <h1 className='fuddy'>Fuddy!</h1>
     <Button color="light-purple" size="small" onClick={() =>navigate("/LogIn")}>Log In</Button>
-    <Button color="dark-purple" size="large" onClick={() =>navigate("/SignUp")}>Sign Up</Button>
+    <Button color="dark-purple" size="small" onClick={() =>navigate("/SignUp")}>Sign Up</Button>
     
+  </div>
   </div>
 }
 
