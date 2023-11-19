@@ -40,7 +40,7 @@ export const Login: React.FC = () => {
        <TextBox type="text" placeholder="Password" onChange={handleInputChange} />
     </form>
      
-      <Button color="light-green" size="large" onClick={() =>navigate("/Profile")}>Login</Button>
+      <Button color="light-green" size="large" onClick={() =>navigate("/Home")}>Login</Button>
     </div>
   );
 }

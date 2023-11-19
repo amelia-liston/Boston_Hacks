@@ -14,8 +14,8 @@ const Landing = () => {
     return <div className="home-background">
       <div className="center-container">
     <h1 className='fuddy'>Fuddy!</h1>
-    <Button color="light-purple" size="small" onClick={() =>navigate("/LogIn")}>Log In</Button>
-    <Button color="dark-purple" size="small" onClick={() =>navigate("/SignUp")}>Sign Up</Button>
+    <Button color="dark-green" size="small" onClick={() =>navigate("/LogIn")}>Log In</Button>
+    <Button color="white" size="small" onClick={() =>navigate("/SignUp")}>Sign Up</Button>
     
   </div>
   </div>
