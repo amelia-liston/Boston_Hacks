@@ -6,6 +6,7 @@ import { Button } from '~/components/button';
 import { TextBox } from '~/components/textBox';
 
 
+
 export const SignUp: React.FC = () => {
   const navigate = useNavigate();
   
@@ -23,6 +24,16 @@ export const SignUp: React.FC = () => {
         // Handle form submission with the input value
         console.log('Form submitted with value:', inputValue);
     }; 
+
+    // Example usage in a form component
+
+
+
+
+
+    
+  
+
   return (
 
     

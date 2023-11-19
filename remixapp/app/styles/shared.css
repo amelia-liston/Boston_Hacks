@@ -7,12 +7,19 @@
     border-radius: 100px;
 }
 
+.same-line {
+    
+    display: inline-block;
+    margin-right: 10px; /* Adjust as needed to add space between buttons */
+      
+}
+
 .button-dark-green {
     border-radius: 34px;
     background: #4C7449;
     border: 2px solid #4C7449;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-    margin-top: 10px;
+    margin-top: 5px;
     
     /* background: var(--m-3-sys-dark-primary, #D0BCFF); */
 }
@@ -20,7 +27,7 @@
 .button-white {
 
     border-radius: 34px;
-    border: 2px solid #FFF;
+    border: 2px solid #4C7449;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
     margin-top: 10px;
     /* background: var(--m-3-sys-light-primary, #6750A4); */
@@ -48,6 +55,7 @@
 .button-small {
     width: 172px;
     height: 54px;
+    margin-left: 45 px;
 }
 
 .home-background {
@@ -137,4 +145,29 @@ font-weight: 700;
 line-height: 120%;
 
 
+}
+
+.form-dropdown {
+
+    width: 77px;
+height: 31px;
+flex-shrink: 0;
+    
+    border-radius: 6px;
+background: rgba(217, 217, 217, 0.43);
+box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+margin-left: 30px;
+
+    
+}
+
+.h3 {
+    color: #4C7449;
+font-family: Roboto;
+font-size: 15px;
+font-style: normal;
+font-weight: 700;
+line-height: 120%; /* 18px */
+margin-left: 34px;
+margin-bottom: 5px;
 }
