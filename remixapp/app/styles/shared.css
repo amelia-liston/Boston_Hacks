@@ -5,13 +5,16 @@
     align-items: center;
     flex-shrink: 0;
     border-radius: 100px;
+    text-align: center;
+      padding: 10px 10px; 
+   
 }
 
 .same-line {
     
     display: inline-block;
-    margin-right: 10px; /* Adjust as needed to add space between buttons */
-      
+    margin-right: 7px; /* Adjust as needed to add space between buttons */
+    margin-bottom: 5px; 
 }
 
 .button-dark-green {
@@ -174,10 +177,40 @@ margin-bottom: 5px;
 
 .section {
     color: #4C7449;
-text-align: center;
+text-align: left;
 font-family: Squada One;
 font-size: 30px;
 font-style: normal;
 font-weight: 400;
-line-height: normal;
+line-height: .5;
+margin-top: 5px;
 }
+
+.dark-green-box {
+     /* Green color (adjust the color code as needed) */
+    border: 1px solid #006600; /* Darker green border (adjust the color code as needed) */
+    margin: 20px; /* Adjust the margin as needed */
+    padding: 10px; /* Adjust the padding as needed */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+    text-align: center; /* Center the text inside the box */
+    line-height: 100px; /* Center vertically */
+    color: #ffffff; /* Text color (white in this case) */
+
+    width: 360px;
+    height: 103px;
+    flex-shrink: 0;
+
+    border-radius: 8px;
+    background: #4C7449;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+
+    
+}
+
+.higher-text {
+    position: relative;
+    top: -15px; /* Adjust the value to move the text higher */
+    line-height: .5; 
+  }
+
+
