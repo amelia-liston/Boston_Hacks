@@ -8,9 +8,10 @@ function YourProfile() {
   const navigate = useNavigate();
   
   return ( <div className='white-background'>
+    <h1 className='welcome'>Anne Lauve</h1>
     <div  className="center-container">
-      <h1 className='welcome'>Anne Lauve</h1>
-      <h3 className='little-text'>computer science, class of 2027</h3> 
+      
+      <h3 className='.higher-text little-text'>computer science, class of 2027</h3> 
      </div>
 
      <h3 className='section'>Active Tables</h3>
@@ -53,7 +54,7 @@ function YourProfile() {
           {/* </div> */}
       </div>
         <div className='center-container'>
-        <Button color="light-green" size="small" onClick={() =>navigate("/Profile")}>Home</Button>
+        <Button color="light-green" size="small" onClick={() =>navigate("/Home")}>Home</Button>
       
         </div>
       

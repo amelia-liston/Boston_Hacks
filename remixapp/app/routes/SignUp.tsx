@@ -57,6 +57,7 @@ export const SignUp: React.FC = () => {
      
       <Button color="light-green" size="large" onClick={() =>navigate("/Profile")}>Continue</Button>
         <h3 className='little-text'>Already have an account?</h3> <Button color="light-green" size="tiny" onClick={() =>navigate("/Login")}>Log in here</Button>
+        
     </div>
   );
 }
