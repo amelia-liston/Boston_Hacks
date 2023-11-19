@@ -49,7 +49,7 @@ export const Preferences: React.FC = () => {
     </form>
 
     
-    <Button color="light-green" size="large" onClick={() =>navigate("/Home")}>Continue</Button>
+    <Button color="light-green" size="large" onClick={() =>navigate("/YourProfile")}>Continue</Button>
 
     </div>
   );

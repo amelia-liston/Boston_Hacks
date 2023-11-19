@@ -171,3 +171,13 @@ line-height: 120%; /* 18px */
 margin-left: 34px;
 margin-bottom: 5px;
 }
+
+.section {
+    color: #4C7449;
+text-align: center;
+font-family: Squada One;
+font-size: 30px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
