@@ -7,12 +7,14 @@ import { useNavigate, useNavigation } from "@remix-run/react";
 function Home() {
   const navigate = useNavigate();
   
-  return (
+  return ( <div className='white-background'>
     <div  className="center-container">
-      <h1>Welcome to Remix!</h1>
-      <p>This is your home page.</p>
+      <h1 className='welcome'>Anne Lauve</h1>
+      <h3 className='little-text'>computer science, class of 2027</h3> 
+
+    
       <Button onClick={() =>navigate("/Profile")}>Sign Up</Button>
-    </div>
+    </div></div>
   );
 }
 

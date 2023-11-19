@@ -7,7 +7,7 @@ import { Button } from '~/components/button';
 import { TextBox } from '~/components/textBox';
 import { Dropdown } from '~/components/dropdown';
 
-export const Interests: React.FC = () => {
+export const Preferences: React.FC = () => {
   const navigate = useNavigate();
   
   
@@ -37,23 +37,22 @@ export const Interests: React.FC = () => {
     <div className='white-background center-container'>
 
 
-      <h1 className='welcome'>Choose your interests</h1>
+      <h1 className='welcome'>Preferences</h1>
 
-      <div className='same-line'>
-      <Button color="white" size="small" onClick={() =>navigate("/Interests")}>sports</Button>  <Button color="white" size="small" onClick={() =>navigate("/Interests")}>music</Button>
-  
-        <Button color="white" size="small" onClick={() =>navigate("/Interests")}>science</Button>
-        <Button color="white" size="small" onClick={() =>navigate("/Interests")}>fashion</Button>
-      </div>
       
-      <div>
-      <Button color="white" size="small" onClick={() =>navigate("/Interests")}>rocks</Button>
-    <Button color="light-green" size="large" onClick={() =>navigate("/Preferences")}>Continue</Button>
-
-      </div>
     
+
+    <h3 className='h3'>Do you prefer to meet people within or outside of your major?</h3>
+    <form>
+    <p className='h3'>(Select) </p> <Dropdown options={['Within my major', 'I want to meet anybody']} onChange={handleDropdownChange} />
+      
+    </form>
+
+    
+    <Button color="light-green" size="large" onClick={() =>navigate("/Home")}>Continue</Button>
+
     </div>
   );
 }
 
-export default Interests;
+export default Preferences;
